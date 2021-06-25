@@ -2,26 +2,15 @@
 <html lang='en' dir="ltr">
     <head>
         <meta charset="utf-8"/>
-        <title>WebSocketDemo</title>
+        <title>Chatbot</title>
     </head>
     <body>
-        <script>
-            window.onload= function() {
-                var url= document.location.href,
-                params= url.split("?n=")[1];
-                var x= params.split("%20");
-                var name="";
-                x.forEach(element => {
-                    name= name+element+" ";
-                });
-                alert("Welcome "+name);
-            }
-        </script>
+    
+        <h1 id="h1" style="color: darkslateblue; padding-left: 20px;"></h1>
         <ul id="chat"></ul>
         <form>
-            <textarea rows="8" cols="8" id="message"></textarea>
-                <br />
-                <button type="submit">Send</button>
+            <textarea rows="1" cols="25" id="message"></textarea>
+                <button type="submit" style="margin-left: 10px;">Send</button>
         </form>
         <script src="main.js"></script>
 
