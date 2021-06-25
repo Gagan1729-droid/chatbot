@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Hello</title>
+        <title>Chatbot</title>
     
     </head>
-    <body>
-       <label for="name" >Name</label>
+    <body style="margin-top:20px; align-items: center; text-align: center; background-color: darkslategrey;">
+        <h1>Welcome to our Chat bot</h1>
+        <h3>Enter into the portal and chat with the people out there</h3>
+    <div style="background-color: cyan; padding: 5%; margin-top: 2%;">
+
+       <label for="name" >Name&emsp;</label>
        <input type="text" required id="mname">
-        <br />
-        <button type="submit" onclick="next()">Enter</button>
+        
+        <button type="submit" onclick="next()" style="margin-left: 10px;">Enter</button>
+
+        </div>
 
         <script type="text/javascript">
         function next() {
@@ -16,7 +22,7 @@
             var url= 'chatPage.html?n=' +encodeURIComponent(name);
             document.location.href=url;
         }
-        </script>
+        </script>        
     </body>
 
 </html>
