@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang='en' dir="ltr">
+    <head>
+        <meta charset="utf-8"/>
+        <title>WebSocketDemo</title>
+    </head>
+    <body>
+        <script>
+            window.onload= function() {
+                var url= document.location.href,
+                params= url.split("?n=")[1];
+                var x= params.split("%20");
+                var name="";
+                x.forEach(element => {
+                    name= name+element+" ";
+                });
+                alert("Welcome "+name);
+            }
+        </script>
+        <ul id="chat"></ul>
+        <form>
+            <textarea rows="8" cols="8" id="message"></textarea>
+                <br />
+                <button type="submit">Send</button>
+        </form>
+        <script src="main.js"></script>
+
+    </body>
+</html>
